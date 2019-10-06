@@ -1,6 +1,6 @@
 # SDIPen
 
-# CLine Class 생성 및 추가할 내용
+## CLine Class 생성 및 추가할 내용
 ```c++
 #pragma once
 #include <afx.h>
@@ -45,12 +45,12 @@ void CLine::Serialize(CArchive& ar) {
     }
 }
 ```
-# Doc.h에 추가할 내용
+## Doc.h에 추가할 내용
 ```c++
 public:
     CObArray m_oa;
 ```
-# Doc.cpp에 수정할 내용
+## Doc.cpp에 수정할 내용
 ```c++
 BOOL CMy4thclass2Doc::OnNewDocument()
 {
@@ -68,14 +68,14 @@ BOOL CMy4thclass2Doc::OnNewDocument()
         return TRUE;
 }
 ```
-# View.h에 추가할 내용
+## View.h에 추가할 내용
 ```c++
 public:
     CPoint pnt;
     int size = 10;
     COLORREF col = RGB(255,255,255);
 ```
-# View.cpp에 추가할 내용
+## View.cpp에 추가할 내용
 ```c++
 void CMy4thclass2View::OnMouseMove(UINT nFlags, CPoint point)
 {
